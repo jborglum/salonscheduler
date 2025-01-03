@@ -222,3 +222,12 @@ clear
 ./salon.sh
 clear
 ./salon.sh
+clear
+pg_dump -CC --inserts -U freecodecamp salon > salon.sql
+git remote set-url origin https://github.com/jborglum/salonscheduler.git
+git branch -M main
+git push -u origin main
+git commit
+rm bike_shop_example.sh
+clear
+git add .
